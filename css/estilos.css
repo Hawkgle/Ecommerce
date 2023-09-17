@@ -120,6 +120,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .listado-categorias a {
@@ -147,3 +148,4 @@ img {
     grid-column: 2 / 3;
     color: #fff;
 }
+/* ah*/
