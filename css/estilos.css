@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    /*1 rem = 10px*/
 }
 
 *,
@@ -9,28 +10,40 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    line-height: 2;
 }
 
 /* globales */
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
 }
 
-h3{
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
     font-size: 3rem;
 }
 
 
-.contenedor-navegacion a{
+.contenedor-navegacion a {
     text-decoration: none;
     color: #000;
 }
 
-.contenedor-navegacion a:hover{
+.contenedor-navegacion a:hover {
     text-decoration: none;
     color: #037bc0;
     font-weight: bold;
@@ -44,7 +57,7 @@ h3{
     margin-left: auto;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
@@ -52,9 +65,7 @@ img{
 /* header y navegación */
 .nombre-sitio {
     margin-top: 5rem;
-    margin-bottom: 5rem;
     text-align: center;
-    font-size: 4rem;
 }
 
 .nombre-sitio span {
@@ -82,32 +93,57 @@ img{
 
 /*Categorias */
 
-.categorias h2{
+.categorias {
+    padding-top: 5rem;
+}
+
+.categorias h2 {
     text-align: center;
 }
 
-.categoria a{
+.categoria a {
     text-align: center;
     display: block;
     padding: 2rem;
     font-size: 2rem;
 }
 
-.categoria a:hover{
-background-color: #037bc0;
-color: #fff;
-border-bottom-right-radius: 1rem;
-border-bottom-left-radius: 1rem;
-width: 38.6rem;
+.categoria a:hover {
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 38.6rem;
 }
 
-.listado-categorias{
+.listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.listado-categorias a{
+.listado-categorias a {
     text-decoration: none;
     color: #000;
+}
+
+/* Bloque Nosotros */
+
+.sobre-nosotros {
+    background-image: linear-gradient( to right, transparent 50%,  #037bc0 50%), url(../images/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size:  100%, 120rem;
+}   
+
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+}
+
+.texto-nosotros{
+    grid-column: 2 / 3;
+    color: #fff;
 }
