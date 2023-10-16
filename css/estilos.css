@@ -73,6 +73,8 @@ img {
     padding: 1rem;
     transition: background-color .3s ease-out;
     /*realentizar el proceso de transisión del hover*/
+    text-align: center;
+
 }
 
 .btn:hover {
@@ -84,6 +86,10 @@ img {
     text-align: center;
 }
 
+.max-width-30 {
+    max-width: 30rem;
+}
+
 /* header y navegación */
 .nombre-sitio {
     margin-top: 5rem;
@@ -91,6 +97,10 @@ img {
 }
 
 .nombre-sitio span {
+    color: #037bc0;
+}
+
+.contenido-principal .text-center span {
     color: #037bc0;
 }
 
@@ -275,4 +285,89 @@ img {
 .copyright {
     margin-top: 4rem;
     text-align: center;
+}
+
+/* Nosotros */
+.contenido-nosotros {
+    display: grid;
+    /* columna */
+    grid-template-columns: 1fr 2fr;
+    /* columna */
+    grid-template-columns: repeat(auto-fit, minmax(25 rem, 1fr));
+    /* mientras contenido no supere los 25 rem o 250 px asigale 1fr y 1fr pero si es menos de 250 px asignale un fr a cada uno, esto para responsive*/
+    column-gap: 4rem;
+    /* separar */
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Blog */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor-blog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* la primer parte mide dos terceras partes y la sengunda mide una tercera parte  */
+    column-gap: 4rem;
+}
+
+.entrada {
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+}
+
+/* esta se uso para que en la ultima entrada no ponga linea de border bottom */
+
+.entrada-meta {
+    display: flex;
+    justify-content: space-between;
+    /* alinear contenido para colocar uno a la izq y uno a la der */
+}
+
+.entrada-meta p {
+    font-weight: bold;
+
+}
+
+.entrada-meta span {
+    color: #037bc0;
+}
+
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto; /* para centrar */
+}
+
+/* Galeria */
+
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.galeria img{
+    height: 30rem;
+    width: 30rem;
+    object-fit: cover;
+}
+
+.galeria img:hover{
+transform: scale(1.10);
 }
