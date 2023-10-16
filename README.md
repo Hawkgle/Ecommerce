@@ -11,5 +11,7 @@ Ejemplo Pagina Muebles
 
 • Se usa normalize css.
 
+• Previsualización de la pagina: <b>https://hawkgle.github.io/Ecommerce/</b>
+
 <b>Beagle & Hawk Consulting Services ©🐶🦅</b>
 
